@@ -67,16 +67,25 @@ p {
 }
 
 .card {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);            /* kept translucent card look */
+    border: 1px solid rgba(255, 255, 255, 0.15);      /* stronger border for contrast */
     border-radius: 16px;
     padding: 1.5rem;
-    transition: transform 0.3s, background 0.3s;
+    transition: transform 0.3s, background 0.3s, box-shadow 0.3s, border-color 0.3s;
+    /* subtle base shadow to lift cards off the background */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    cursor: default; /* set to pointer if cards are clickable */
+    backdrop-filter: blur(4px); /* gentle glass effect keeps readability */
 }
 
 .card:hover {
     transform: translateY(-6px);
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.10);            /* slightly brighter on hover */
+    border-color: rgba(255, 255, 255, 0.28);          /* clearer outline on hover */
+    /* pink glow + larger drop shadow to make the hover obvious */
+    box-shadow:
+        0 12px 30px rgba(183, 84, 170, 0.20),         /* pinkish drop shadow */
+        0 2px 6px rgba(0, 0, 0, 0.08);                /* small darker anchor shadow */
 }
 
 .card h3 {
