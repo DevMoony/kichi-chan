@@ -17,11 +17,7 @@ body {
 
 header {
     text-align: center;
-    margin-bottom: 3rem;
-}
-
-header .btn {
-    margin-top: 2rem; /* add gap between tagline and buttons */
+    margin-bottom: 4rem;
 }
 
 h1 {
@@ -30,6 +26,21 @@ h1 {
     background: linear-gradient(to right, #ffb6e6, #d6a2ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #ffd6f7;
+    max-width: 600px;
+    margin: 1rem auto 2rem;
+}
+
+header .btn {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: center;
 }
 
 p {
