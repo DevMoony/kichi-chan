@@ -20,9 +20,8 @@ header {
     margin-bottom: 3rem;
 }
 
-header p {
-    margin-top: 1rem;   /* space between h1 and paragraph */
-    margin-bottom: 2rem; /* pushes buttons downward */
+header .btn {
+    margin-top: 2rem; /* add gap between tagline and buttons */
 }
 
 h1 {
